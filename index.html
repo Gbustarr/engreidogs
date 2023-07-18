@@ -19,7 +19,7 @@
                 <img src="img/logo_small.png" alt="Engreidogs Logo">Engreidogs
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a>Ingresar</a></li>
+                <li><a href="#modal1" class=" modal-trigger">Ingresar</a></li>
                 <li><a class="waves-effect waves-light btn-large">Registrarse</a></li>
             </ul>
 
@@ -55,21 +55,24 @@
             <!--   Icon Section   -->
             <div class="row center">
                 <h4>Productos en oferta</h4>
-                <div class="col s3 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img
-                                src="https://jumbo.vtexassets.com/arquivos/ids/370117/Alimento-perro-cachorro-carne-pollo-y-leche-3-kg.jpg?v=637420090702870000">
-                            <span class="card-title yellow circle red-text">-37%</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                    class="material-icons">add</i></a>
-                        </div>
-                        <div class="card-content">
-                            <p>Comida para gato BRAVERY CHICKEN</p>
-                            <p>$14550</p>
+                
+
+                    <div class="col s3 m3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img
+                                    src="https://jumbo.vtexassets.com/arquivos/ids/370117/Alimento-perro-cachorro-carne-pollo-y-leche-3-kg.jpg?v=637420090702870000">
+                                <span class="card-title yellow circle red-text">-37%</span>
+                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">add</i></a>
+                            </div>
+                            <div class="card-content">
+                                <p>Comida para gato BRAVERY CHICKEN</p>
+                                <p>$14550</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+
                 <div class="col s3 m3">
                     <div class="card">
                         <div class="card-image">
@@ -186,7 +189,7 @@
 
                             </div>
                             <div class="card-content">
-                                <a class="waves-effect waves-light btn-block">
+                                <a href="rastreo.html" class="waves-effect waves-light btn-block">
                                     <h4>Rastreo</h4>
                                 </a>
 
@@ -252,6 +255,35 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+
+        <div class="modal-content center">
+            <h4>Ingreso usuarios</h4>
+            <div class="row s3 center center-align">
+                <div class="row s6 center-align ">
+                    <form class="col s6 center-align offset-m3">
+                        <div class="row ">
+                            <div class="input-field row s6">
+                                <i class="material-icons prefix">email</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Usuario</label>
+                            </div>
+                            <div class="input-field  row s6">
+                                <i class="material-icons prefix">password</i>
+                                <input id="icon_telephone" type="password" class="validate">
+                                <label for="icon_telephone">Contraseña</label>
+                            </div>
+                        </div>
+                        <a href="#!" type="submit" class="btn-block">Login</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
 
 
     <!--  Scripts-->
