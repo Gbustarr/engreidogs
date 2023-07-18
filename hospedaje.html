@@ -12,57 +12,53 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
-<body>
+<body >
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="index.html" class="brand-logo">
                 <img src="img/logo_small.png" alt="Engreidogs Logo">Engreidogs
             </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a class="waves-effect waves-light btn-large">Ingresar</a></li>
-            </ul>
-
             <ul id="nav-mobile" class="sidenav">
                 <li><a href="#">Navbar Link</a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down" style="padding-right: 100px;">
+                <li><a href="hospedaje.html">Hospedaje</a></li>
+                <li><a href="veterinaria.html">Veterinaria</a></li>
+                <li><a href="rastreo.html">Rastreo</a></li>
+              </ul>
         </div>
     </nav>
-    <div class="row center-align offset-m6 ">
-        <br>
-        <br>  
-        <br>  
-        <form class="col  m6  center-align ">
-          <div class="row">
-            <div class="input-field col m6">
-              <input placeholder="Nombre" id="nombre" type="text" class="validate">
-              <label for="Nombre">Nombre</label>
-            </div>
-            <div class="input-field col m6">
-              <input id="apellido" type="text" class="validate">
-              <label for="apellido">Apellido</label>
+
+    <div  id="camaras" style="text-align: center;height: 700px;padding: 40px;">
+        <div class="row" style="margin-top: -40px;color: white;"><h3>Vista de Cámara</h3></div>
+        <div style="display: inline-block; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); padding: 10px;">
+          <div style="float: left;;">
+            <video id="videoPlayer" width="700" height="450" autoplay muted loop>
+              <source id="videoSource" src="mp4/video1.mp4" type="video/mp4">
+            </video>
+          </div>
+      
+          <div style="float: left;">
+            <div class="collection">
+              <a href="#!" class="collection-item" onclick="changeVideo('mp4/video1.mp4')">Bruno</a>
+              <a href="#!" class="collection-item" onclick="changeVideo('mp4/video2.mp4')">Pancho</a>
+              <a href="#!" class="collection-item" onclick="changeVideo('mp4/video3.mp4')">Mati</a>
+              <a href="#!" class="collection-item" onclick="changeVideo('mp4/video4.mp4')">Perro Ton</a>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="contraseña" type="password" class="validate">
-              <label for="contraseña">Contraseña</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
         </div>
-          
-          <a class="waves-effect waves-light btn-large">Registrarse</a>
-        </form>
-        <div class="row m6">      
-                <img src="img/background4.jpg" alt="perritos" class="imagen">
-        </div> 
-    </div>
-        
+      </div>
+      
+      <script>
+        function changeVideo(videoFileName) {
+          var videoSource = document.getElementById('videoSource');
+          videoSource.src = videoFileName;
+          var videoPlayer = document.getElementById('videoPlayer');
+          videoPlayer.load();
+          videoPlayer.play();
+        }
+      </script>
     <footer class="page-footer teal">
         <div class="container">
             <div class="row">
@@ -72,25 +68,23 @@
                         servicios para mascotas, con una pasión inquebrantable por el bienestar y la felicidad de
                         nuestros amigos peludos. Desde nuestros humildes comienzos, nos hemos convertido en una marca
                         reconocida y confiable en la industria.</p>
-
-
                 </div>
                 <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
+                    <h5 class="white-text">Contacto</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        <li><a class="white-text" href="#!">+56922369124</a></li>
+                        <li><a class="white-text" href="#!">+56977428921</a></li>
+                        <li><a class="white-text" href="#!">+56933264591</a></li>
+
                     </ul>
                 </div>
                 <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
+                    <h5 class="white-text">RRSS</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        <li><a class="white-text" href="#!">Instagram: @Engreidogs</a></li>
+                        <li><a class="white-text" href="#!">Facebook: Facebook.com/engreidogs</a></li>
+                        <li><a class="white-text" href="#!">TikTok: @Engreidogs</a></li>
+
                     </ul>
                 </div>
             </div>

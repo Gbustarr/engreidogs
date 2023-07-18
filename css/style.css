@@ -59,3 +59,7 @@ footer.page-footer {
 .blur-image img {
   filter: blur(5px);
 }
+
+#camaras {
+  background-color: rgb(58, 100, 112);
+}
